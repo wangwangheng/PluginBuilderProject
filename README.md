@@ -10,10 +10,9 @@ todo 将android sourceSets 配置改为插件功能写死
 
 //false将重命名并在对应目标目录生成新的文件，true则标识正常的输出
 
+    apply plugin: 'com.ym.pluginbuilder'
+
     def isAPP = false
-
-
-
 
     apkdistconf {
         isApp = isAPP.toBoolean()
